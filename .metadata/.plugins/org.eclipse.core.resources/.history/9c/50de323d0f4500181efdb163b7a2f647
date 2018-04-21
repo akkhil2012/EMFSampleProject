@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Usingmodel
+Bundle-SymbolicName: akkhil.emf.webpage.usingmodel
+Bundle-Version: 1.0.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+org.eclipse.emf.ecore: emfCore
+com.akkhil.emf.webpage.model: akkhilWebPageModel
+Import-Package: akkhil.emf.webpage.model.webpage

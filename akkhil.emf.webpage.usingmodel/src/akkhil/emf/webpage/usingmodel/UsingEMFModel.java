@@ -1,0 +1,28 @@
+package akkhil.emf.webpage.usingmodel;
+
+import akkhil.emf.webpage.model.webpage.Web;
+import akkhil.emf.webpage.model.webpage.Webpage;
+import akkhil.emf.webpage.model.webpage.WebpageFactory;
+import akkhil.emf.webpage.model.webpage.WebpagePackage;
+
+public class UsingEMFModel {
+
+	public static void main(String[] args) {
+		
+		WebpagePackage webPackage = WebpagePackage.eINSTANCE;
+        // Retrieve the default factory singleton
+        WebpageFactory factory = WebpageFactory.eINSTANCE;
+        // create an instance of myWeb
+        Web myWeb = factory.createWeb();
+        myWeb.setName("Hallo");
+        myWeb.setDescription("This is a description");
+        // create a page
+        Webpage webpage = factory.createWebpage();
+        webpage.setTitle("This is a title");
+        // add the page to myWeb
+        myWeb.getWebpage().add(webpage);
+		
+
+	}
+
+}
